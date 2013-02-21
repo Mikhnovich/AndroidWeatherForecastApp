@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 android:background="#000033"
+	 android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivDayWeather"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="Current weather icon"
+        android:src="@drawable/w113" />
+
+    <TextView
+        android:id="@+id/tvDayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/ivDayWeather"
+        android:maxLines="1"
+        android:text="21.02.2013, Thursday"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvDayWeatherDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDayDate"
+        android:layout_below="@+id/tvDayDate"
+        android:layout_marginTop="3dp"
+        android:text="Sunny"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+    
+    <TextView
+        android:id="@+id/tvDayTemperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		
+		android:layout_below="@+id/tvDayWeatherDescription"
+        android:layout_marginTop="1dp"
+        android:layout_alignLeft="@+id/tvDayWeatherDescription"
+		
+        android:text="from -5 to -1 \u00B0C"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#C1BFFF"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDayWindSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		android:layout_below="@+id/tvDayTemperature"
+        android:layout_marginTop="1dp"
+        android:layout_alignLeft="@+id/tvDayTemperature"
+        
+        android:text="Wind: 16 km/h |"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDayWindDirection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+		android:layout_alignBottom="@+id/tvDayWindSpeed"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/tvDayWindSpeed"
+        
+        android:text="NWN"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#C1BFFF"
+        android:textSize="12sp" />
+    
+</RelativeLayout>

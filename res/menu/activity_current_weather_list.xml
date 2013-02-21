@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/refreshAction"
+        android:icon="@drawable/ic_menu_refresh"
+        android:showAsAction="always"
+        android:title="@string/refresh_label" >
+    </item>
+    <item
+        android:id="@+id/citiesAddAction"
+        android:icon="@android:drawable/ic_input_add"
+        android:showAsAction="always" 
+        android:title="@string/add_or_remove_cities_label">
+    </item>
+</menu>
