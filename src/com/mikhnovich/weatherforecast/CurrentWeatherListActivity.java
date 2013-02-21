@@ -28,15 +28,6 @@ public class CurrentWeatherListActivity extends Activity implements OnItemClickL
 	public static final String CELSIUS = "\u00B0C";
 	public static final String KMPH = "km/h";
 	
-	/*
-	 *  TODO:
-	 *  Заебись, четко
-	 *  
-	 *  5.) Добавить активити с выбором городов
-	 *  6.) Добавить кнопку обновления
-	 *  7.) Добавить эксепшены и пофиксить мелкие недостатки.
-	 */
-	
 	ListView lvCurWeather;
 	SimpleAdapter adapter;
 	
